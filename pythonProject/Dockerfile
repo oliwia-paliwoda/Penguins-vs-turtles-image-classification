@@ -7,7 +7,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . /pythonProject
 
-EXPOSE 8080
+EXPOSE 8081
 
 CMD ["python", "main.py","-e", "production"]
 ENTRYPOINT ["python", "main.py", "-e", "production"]

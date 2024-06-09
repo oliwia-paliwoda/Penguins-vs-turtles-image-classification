@@ -70,4 +70,4 @@ input_component = gr.components.Image(label="Wczytaj obraz")
 output_component_resnet18 = gr.components.Label(label="Predykcja z ResNet18")
 output_component_vgg16 = gr.components.Label(label="Predykcja z VGG16")
 
-gr.Interface(fn=classify_image, inputs=input_component, outputs=[output_component_resnet18, output_component_vgg16]).launch(share=True)
+gr.Interface(fn=classify_image, inputs=input_component, outputs=[output_component_resnet18, output_component_vgg16]).launch(server_name="0.0.0.0", server_port=8081)
